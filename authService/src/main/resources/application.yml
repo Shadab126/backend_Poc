@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: AUTH-SERVICE
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/authdb
+    username: root
+    password: shadabadmin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: shadabansari14321@gmail.com
+    password: wccn wwsw gmgb splt
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+
+
+jwt:
+  secret: U/VV8DObHyQvtjX5okIz8hcBARrVZDyKFPrUz+6gIXs=  # 32-byte key
+  access-expiration: 86400000               # 1 day
+  reset-expiration: 300000                  # 5 min
+
+
