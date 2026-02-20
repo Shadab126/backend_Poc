@@ -46,7 +46,12 @@ spring:
               uri: lb://PRODUCT-SERVICE
               predicates:
                 - Path=/product/**
-              filters:
+
+                - id: orderService
+                  uri: lb://ORDER-SERVICE
+                  predicates:
+                    - Path=/product/**
+#              filters:
 
 
 

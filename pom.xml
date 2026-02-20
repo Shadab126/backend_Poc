@@ -16,6 +16,7 @@
         <module>eurekaService</module>
         <module>configServer</module>
         <module>productService</module>
+        <module>orderService</module>
     </modules>
 
     <properties>
